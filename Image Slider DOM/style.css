@@ -10,7 +10,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  /* Beautiful gradient background */
+
   background: linear-gradient(135deg, #6e8efb 0%, #a777e3 100%);
 }
 
@@ -35,7 +35,7 @@ body {
   object-fit: cover;
   position: absolute;
   opacity: 0;
-  /* Reduced transition time from 0.5s to 0.2s for faster response */
+
   transition: opacity 0.2s ease-in-out;
 }
 
@@ -66,7 +66,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* Reduced transition time to 0.15s for faster button feedback */
+
   transition: all 0.15s;
 }
 
@@ -91,7 +91,7 @@ body {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.5);
   cursor: pointer;
-  /* Reduced transition time to 0.15s */
+
   transition: all 0.15s;
 }
 
