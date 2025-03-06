@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+}
+
+.todo-app {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.todo-app:hover {
+  transform: translateY(-5px);
+}
+
+h1 {
+  text-align: center;
+  color: #5a5a5a;
+  margin-bottom: 25px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 28px;
+}
+
+.input-container {
+  display: flex;
+  margin-bottom: 25px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+#task-input {
+  flex: 1;
+  padding: 15px 20px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  background: #f8f9fa;
+}
+
+#add-button {
+  background: linear-gradient(45deg, #6a11cb 0%, #2575fc 100%);
+  color: white;
+  border: none;
+  padding: 0 25px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+#add-button:hover {
+  background: linear-gradient(45deg, #5900b3 0%, #1e62d0 100%);
+}
+
+.tasks-wrapper {
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+.tasks-wrapper::-webkit-scrollbar {
+  width: 5px;
+}
+
+.tasks-wrapper::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.tasks-wrapper::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.tasks-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+li:hover {
+  background-color: #fff;
+  transform: translateX(5px);
+}
+
+.delete-button {
+  background-color: transparent;
+  color: #ff5252;
+  border: none;
+  border-radius: 50%;
+  height: 36px;
+  width: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  opacity: 0.7;
+}
+
+.delete-button:hover {
+  background-color: #ffebee;
+  opacity: 1;
+}
+
+.empty-list {
+  text-align: center;
+  color: #aaa;
+  font-style: italic;
+  padding: 25px 20px;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.task-text {
+  word-break: break-word;
+  max-width: 80%;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.delete-button i {
+  font-size: 16px;
+}
