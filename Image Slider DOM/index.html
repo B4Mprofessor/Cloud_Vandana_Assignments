@@ -7,13 +7,19 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="slider-container">
-      <img id="slider-image" src="" alt="Slider Image" />
-      <div id="slider-buttons">
-        <button id="prev-button">Previous</button>
-        <button id="next-button">Next</button>
+    <div class="slider-container">
+      <div class="slider" id="imageSlider">
+        <!-- Images will be added dynamically with JavaScript -->
+      </div>
+      <div class="slider-nav">
+        <button class="nav-btn" id="prevBtn">&#10094;</button>
+        <button class="nav-btn" id="nextBtn">&#10095;</button>
+      </div>
+      <div class="dots-container" id="dotsContainer">
+        <!-- Dots will be added dynamically with JavaScript -->
       </div>
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>
